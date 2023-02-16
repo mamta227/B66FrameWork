@@ -2,34 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-14T18:06:15 IST" name="Suite" finished-at="2023-02-14T18:06:16 IST" duration-ms="665">
+  <suite started-at="2023-02-16T12:19:42 IST" name="Default suite" finished-at="2023-02-16T12:19:42 IST" duration-ms="187">
     <groups>
     </groups>
-    <test started-at="2023-02-14T18:06:15 IST" name="Test" finished-at="2023-02-14T18:06:16 IST" duration-ms="665">
-      <class name="scripts.TestCase1">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.TestCase1@1e1a0406]" started-at="2023-02-14T18:06:15 IST" name="openApp" finished-at="2023-02-14T18:06:16 IST" duration-ms="529" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
+    <test started-at="2023-02-16T12:19:42 IST" name="Default test" finished-at="2023-02-16T12:19:42 IST" duration-ms="187">
+      <class name="scripts.ValidLogin">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.ValidLogin@2dc54ad4]" started-at="2023-02-16T12:19:42 IST" name="openApp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1676530182232" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads]]>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method openApp but has not been marked @Optional or defined
+in C:\Users\SONY\AppData\Local\Temp\testng-eclipse--2061181038\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:147)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at generic.BaseTest.openApp(BaseTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method openApp but has not been marked @Optional or defined
+in C:\Users\SONY\AppData\Local\Temp\testng-eclipse--2061181038\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -56,33 +49,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testA()[pri:0, instance:scripts.TestCase1@1e1a0406]" started-at="2023-02-14T18:06:16 IST" name="testA" finished-at="2023-02-14T18:06:16 IST" duration-ms="1" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
+        <test-method signature="testValidLogin()[pri:1, instance:scripts.ValidLogin@2dc54ad4]" started-at="2023-02-16T12:19:42 IST" name="testValidLogin" finished-at="2023-02-16T12:19:42 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads]]>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method openApp but has not been marked @Optional or defined
+in C:\Users\SONY\AppData\Local\Temp\testng-eclipse--2061181038\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:147)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
-at generic.BaseTest.openApp(BaseTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method openApp but has not been marked @Optional or defined
+in C:\Users\SONY\AppData\Local\Temp\testng-eclipse--2061181038\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -109,15 +95,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.TestCase1@1e1a0406]" started-at="2023-02-14T18:06:16 IST" name="closeApp" finished-at="2023-02-14T18:06:16 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.ValidLogin@2dc54ad4]" started-at="2023-02-16T12:19:42 IST" name="closeApp" finished-at="2023-02-16T12:19:42 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- scripts.TestCase1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- scripts.ValidLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
