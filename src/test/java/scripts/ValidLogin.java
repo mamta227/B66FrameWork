@@ -9,7 +9,7 @@ import pages.LoginPage;
 
 public class ValidLogin extends BaseTest {
 	
-	@Test
+	@Test(priority=1)
 	
 	public void testValidLogin()
 	{
