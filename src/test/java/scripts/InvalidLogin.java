@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
-import pages.ETTPage;
+import generic.Excel;
 import pages.LoginPage;
 
 public class InvalidLogin extends BaseTest{
@@ -13,12 +13,18 @@ public class InvalidLogin extends BaseTest{
 	
 	public void testInvalidLogin()
 	{
+		
+		        //get the test data from the excel sheet
+				String un = Excel.getData("./data/Book1.xlsx","InvalidLogin" ,1 , 0);
+				String pw = Excel.getData("./data/Book1.xlsx","InvalidLogin" ,1 , 1);
+				
+				
 		        //1.enter valid un
 				LoginPage loginPage=new LoginPage(driver);
-				loginPage.setUserName("abcd");
+				loginPage.setUserName(un);
 				
 				//2.enter valid pw
-				loginPage.setPassword("xyz");
+				loginPage.setPassword(pw);
 				
 				//click on login
 				loginPage.clickLoginButton();
